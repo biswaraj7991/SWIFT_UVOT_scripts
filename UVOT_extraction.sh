@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#advanced options not included in this code
 # File containing directories to process
 path_file="image_paths.txt"
 
@@ -37,7 +37,7 @@ while IFS= read -r search_dir; do
     while IFS= read -r line; do
         # Navigate to the directory of the file
         cd "$(dirname "$line")" || continue
-        cp /home/palit/work/project_2/Mrk590/swift_XRT/all_swift/src.reg /home/palit/work/project_2/Mrk590/swift_XRT/all_swift/bkg.reg .
+        cp /path/to/file/src.reg /path/to/file/bkg.reg .
 
         filename=$(basename "$line")
         
